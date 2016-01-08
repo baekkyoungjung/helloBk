@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Title Page</title>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+		<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" />
+
+		<link href="http://netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+		<!-- <link href="http://netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet"> -->
+		<!-- // <script src="http://netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script> -->
+		<!-- // <script src="https://fb.me/react-0.14.6.js"></script> -->
+		<!-- // <script src="https://fb.me/react-dom-0.14.6.js"></script> -->
+		<!-- // <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.23/browser.min.js"></script> -->
+		<style>
+			a:link, a:visited {
+				text-decoration: none;
+			}
+			header {
+				z-index: 999;
+				display: block;
+				background: #efefef;
+				padding-top: 30px;
+				width: 100%;
+				top: 0;
+				bottom: auto;
+				position: fixed;
+			}
+			header .bars-icon {
+				font-size: 21px;
+				padding-right: 40px;
+			}
+
+			header #navbar a {
+				font-size: 23px;
+				letter-spacing: 5px;
+				color: black;
+			}
+			header #navbar li a {
+				font-size: 15px;
+				letter-spacing: 2px;
+			}
+
+			header #navbar .navbar-brand:hover {
+				color : #c1830b;
+			}
+
+			#main-wrapper {
+				z-index: 988;
+				position: relative;
+				padding-top: 84px;
+			}
+
+			#main-wrapper #contents .welcome-msg .top-msg {
+				font-size: 15px;
+			}
+
+			#main-wrapper #contents .welcome-msg .middle-msg {
+				font-size: 12px;
+			}
+
+			#main-wrapper #contents .overflow {
+				height: 400px;
+				position: relative;
+				overflow: hidden;
+			}
+			#main-wrapper #contents .home-banner-img {
+				opacity: 0.5;
+				top: -220px;
+				height: 800px;
+				background-size: cover;
+				background-repeat:no-repeat;
+				position: relative;
+				width: 100%;
+				background-position: center center !important;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- <div id="render-dom"></div> -->
+		<header>
+			<div id="navbar">
+				<div class="row">
+					<a class="col-xs-3 navbar-brand text-center" href="#">bla,bla</a>
+					<ul class="nav navbar-nav">
+						<li class="col-xs-2 hidden-xs text-center">
+							<a href="#">who</a>
+						</li>
+						<li class="col-xs-2 hidden-xs text-center">
+							<a href="#">action</a>
+						</li>
+						<li class="col-xs-2 hidden-xs text-center">
+							<a href="#">life</a>
+						</li>
+						<li class="col-xs-2 hidden-xs text-center">
+							<a href="#">contact</a>
+						</li>
+						<i class="fa fa-bars bars-icon hidden-sm pull-right"></i>
+					</ul>
+				</div>
+			</div>
+		</header>
+
+		<div id="main-wrapper">
+			<div id="contents">
+				<section>
+					<div class="home-banner overflow">
+						<div id="welcome-msg">
+							<div class="col-10-xs">
+								<div class="top-msg">Lorem ipsum dolor sit amet</div>
+								<div class="middle-msg">consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua.</div>
+							</div>
+						</div>
+						<div class="home-banner-img" style="background-image: url(./imgs/1.jpg);"></div>
+					</div>
+				</section>
+			</div>
+
+		</div>
+
+
+
+
+		<script type="text/babel">
+			// var MainComponent = React.createClass({
+
+			// 	render: function() {
+			// 	    return (
+			// 	        <div className="main-component">
+			// 	        </div>
+			// 	    );
+			// 	}
+
+			// });
+
+			// ReactDOM.render(
+			//     <MainComponent/>,
+			//     document.getElementById('render-dom')
+			// );
+		</script>
+	</body>
+</html>
