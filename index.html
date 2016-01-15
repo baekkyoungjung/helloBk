@@ -16,11 +16,12 @@
 		<!-- // <script src="https://fb.me/react-dom-0.14.6.js"></script> -->
 		<!-- // <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.23/browser.min.js"></script> -->
 		<style>
+
 			a:link, a:visited {
 				text-decoration: none;
 			}
 			header {
-				z-index: 999;
+				z-index: 9;
 				display: block;
 				background: #efefef;
 				padding-top: 30px;
@@ -35,11 +36,13 @@
 			}
 
 			header #navbar a {
-				font-size: 23px;
+				font-size: 28px;
 				letter-spacing: 5px;
 				color: black;
 			}
 			header #navbar li a {
+				font-family: "maaxbold";
+				font-weight: bold;
 				font-size: 15px;
 				letter-spacing: 2px;
 			}
@@ -49,25 +52,35 @@
 			}
 
 			#main-wrapper {
-				z-index: 988;
+				z-index: 8;
 				position: relative;
-				padding-top: 84px;
+				padding-top: 80px;
+			}
+			#main-wrapper #welcome-msg {
+				position: absolute;
+				z-index: 7;
+			}
+	
+			#main-wrapper #welcome-msg .jumbotron{
+				background-color: transparent;
+				width: 80%;
+			}
+			
+			#main-wrapper #welcome-msg .jumbotron .first{
+				/*font-size: 90px;*/
 			}
 
-			#main-wrapper #contents .welcome-msg .top-msg {
-				font-size: 15px;
+			#main-wrapper #welcome-msg .jumbotron .second{
+				width: 60%;
+				font-size: 25px;
 			}
 
-			#main-wrapper #contents .welcome-msg .middle-msg {
-				font-size: 12px;
-			}
-
-			#main-wrapper #contents .overflow {
+			#main-wrapper .overflow {
 				height: 400px;
 				position: relative;
 				overflow: hidden;
 			}
-			#main-wrapper #contents .home-banner-img {
+			#main-wrapper .home-banner-img {
 				opacity: 0.5;
 				top: -220px;
 				height: 800px;
@@ -84,38 +97,141 @@
 		<header>
 			<div id="navbar">
 				<div class="row">
-					<a class="col-xs-3 navbar-brand text-center" href="#">bla,bla</a>
-					<ul class="nav navbar-nav">
-						<li class="col-xs-2 hidden-xs text-center">
+					<a class="col-xs-2 navbar-brand text-center" href="#">Lorem</a>
+					<ul class="col-xs-4 nav navbar-nav pull-right hidden-xs hidden-sm">
+						<li class="text-center">
 							<a href="#">who</a>
 						</li>
-						<li class="col-xs-2 hidden-xs text-center">
+						<li class="text-center">
 							<a href="#">action</a>
 						</li>
-						<li class="col-xs-2 hidden-xs text-center">
+						<li class="text-center">
 							<a href="#">life</a>
 						</li>
-						<li class="col-xs-2 hidden-xs text-center">
+						<li class="text-center">
 							<a href="#">contact</a>
 						</li>
-						<i class="fa fa-bars bars-icon hidden-sm pull-right"></i>
 					</ul>
+					<i class="fa fa-bars bars-icon visible-xs visible-sm pull-right"></i>
 				</div>
 			</div>
 		</header>
 
 		<div id="main-wrapper">
-			<div id="contents">
-				<section>
-					<div class="home-banner overflow">
-						<div id="welcome-msg">
-							<div class="col-10-xs">
-								<div class="top-msg">Lorem ipsum dolor sit amet</div>
-								<div class="middle-msg">consectetur adipisicing elit, sed do eiusmod
+			<section id="header">
+				<div id="welcome-msg">
+					<div class="col-10-xs">
+
+						<div class="jumbotron">
+							<div class="container">
+								<h1 class="jumbo-msg first">ipsum dolor sit amet Ut enim ad minim veniam</h1>
+								<div class="jumbo-msg second hidden-xs hidden-sm">consectetur adipisicing elit, sed do eiusmod
 								tempor incididunt ut labore et dolore magna aliqua.</div>
 							</div>
 						</div>
-						<div class="home-banner-img" style="background-image: url(./imgs/1.jpg);"></div>
+							
+					</div>
+				</div>
+				<div class="home-banner overflow">
+					<div class="home-banner-img" style="background-image: url(./imgs/1.jpg);"></div>
+				</div>
+			</section>
+			<div id="contents">
+				<section id="dev-profile">
+					<div class="row text-center">
+						<div id="dev-profile-col">
+							<div class="col-xs-5 col-md-3">
+								face1
+							</div>
+							<div class="col-xs-5 col-md-3">
+								face2
+							</div>
+							<div class="col-xs-5 col-md-3">
+								face3
+							</div>
+							<div class="col-xs-5 col-md-3">
+								face4
+							</div>
+						</div>
+					</div>
+				</section>
+				<section id="dev-area">
+					<div id="dev-skills">
+						<div class="row text-center">
+							<div id="dev-skills-col">
+								<div class="col-xs-4">
+									skills1
+								</div>
+								<div class="col-xs-4">
+									skills2
+								</div>
+								<div class="col-xs-4 hidden-xs">
+									skills3
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="dev-think">
+						<div class="row text-center">
+							<div id="dev-think-col">
+								<div class="col-sm-1 col-xs-2">
+									think1
+								</div>
+								<div class="col-sm-1 col-xs-2">
+									think2
+								</div>
+								<div class="col-sm-1 col-xs-2">
+									think3
+								</div>
+								<div class="col-sm-1 col-xs-2">
+									think4
+								</div>
+								<div class="col-sm-1 col-xs-2">
+									think5
+								</div>
+								<div class="col-sm-1 col-xs-2">
+									think6
+								</div>
+								<div class="col-sm-1 col-xs-2 hidden-xs">
+									think7
+								</div>
+								<div class="col-sm-1 col-xs-2 hidden-xs">
+									think8
+								</div>
+								<div class="col-sm-1 col-xs-2 hidden-xs">
+									think9
+								</div>
+								<div class="col-sm-1 col-xs-2 hidden-xs">
+									think10
+								</div>
+								<div class="col-sm-1 col-xs-2 hidden-xs">
+									think11
+								</div>
+								<div class="col-sm-1 col-xs-2 hidden-xs">
+									think12
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section id="cg-area">
+					<div id="cg-profile">
+						<div class="row text-center">
+							<div id="cg-profile-col">
+								<div class="col-xs-5 col-md-3">
+									face1
+								</div>
+								<div class="col-xs-5 col-md-3">
+									face2
+								</div>
+								<div class="col-xs-5 col-md-3">
+									face3
+								</div>
+								<div class="col-xs-5 col-md-3">
+									face4
+								</div>
+							</div>
+						</div>
 					</div>
 				</section>
 			</div>
