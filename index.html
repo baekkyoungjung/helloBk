@@ -10,87 +10,14 @@
 		<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" />
 
 		<link href="http://netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+
+		<link rel="stylesheet" href="css/index.css">
 		<!-- <link href="http://netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet"> -->
 		<!-- // <script src="http://netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script> -->
 		<!-- // <script src="https://fb.me/react-0.14.6.js"></script> -->
 		<!-- // <script src="https://fb.me/react-dom-0.14.6.js"></script> -->
 		<!-- // <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.23/browser.min.js"></script> -->
-		<style>
 
-			a:link, a:visited {
-				text-decoration: none;
-			}
-			header {
-				z-index: 9;
-				display: block;
-				background: #efefef;
-				padding-top: 30px;
-				width: 100%;
-				top: 0;
-				bottom: auto;
-				position: fixed;
-			}
-			header .bars-icon {
-				font-size: 21px;
-				padding-right: 40px;
-			}
-
-			header #navbar a {
-				font-size: 28px;
-				letter-spacing: 5px;
-				color: black;
-			}
-			header #navbar li a {
-				font-family: "maaxbold";
-				font-weight: bold;
-				font-size: 15px;
-				letter-spacing: 2px;
-			}
-
-			header #navbar .navbar-brand:hover {
-				color : #c1830b;
-			}
-
-			#main-wrapper {
-				z-index: 8;
-				position: relative;
-				padding-top: 80px;
-			}
-			#main-wrapper #welcome-msg {
-				position: absolute;
-				z-index: 7;
-			}
-	
-			#main-wrapper #welcome-msg .jumbotron{
-				background-color: transparent;
-				width: 80%;
-			}
-			
-			#main-wrapper #welcome-msg .jumbotron .first{
-				/*font-size: 90px;*/
-			}
-
-			#main-wrapper #welcome-msg .jumbotron .second{
-				width: 60%;
-				font-size: 25px;
-			}
-
-			#main-wrapper .overflow {
-				height: 400px;
-				position: relative;
-				overflow: hidden;
-			}
-			#main-wrapper .home-banner-img {
-				opacity: 0.5;
-				top: -220px;
-				height: 800px;
-				background-size: cover;
-				background-repeat:no-repeat;
-				position: relative;
-				width: 100%;
-				background-position: center center !important;
-			}
-		</style>
 	</head>
 	<body>
 		<!-- <div id="render-dom"></div> -->
@@ -98,146 +25,182 @@
 			<div id="navbar">
 				<div class="row">
 					<a class="col-xs-2 navbar-brand text-center" href="#">Lorem</a>
-					<ul class="col-xs-4 nav navbar-nav pull-right hidden-xs hidden-sm">
-						<li class="text-center">
-							<a href="#">who</a>
-						</li>
-						<li class="text-center">
-							<a href="#">action</a>
-						</li>
-						<li class="text-center">
-							<a href="#">life</a>
-						</li>
-						<li class="text-center">
-							<a href="#">contact</a>
-						</li>
-					</ul>
-					<i class="fa fa-bars bars-icon visible-xs visible-sm pull-right"></i>
 				</div>
 			</div>
 		</header>
 
 		<div id="main-wrapper">
 			<section id="header">
-				<div id="welcome-msg">
-					<div class="col-10-xs">
+				<div id="welcome">
+					<!-- <img class="avatar" src="./imgs/test_img/bk1.png"/> -->
+					<div class="welcome-msg">정백경</div>
+					<div class="welcome-msg">삼겹살과 피자, 게임 그리고<br> 개발을 좋아하는 이상한 개발자</div>
+					
+					
+					
+				</div>
 
-						<div class="jumbotron">
-							<div class="container">
-								<h1 class="jumbo-msg first">ipsum dolor sit amet Ut enim ad minim veniam</h1>
-								<div class="jumbo-msg second hidden-xs hidden-sm">consectetur adipisicing elit, sed do eiusmod
-								tempor incididunt ut labore et dolore magna aliqua.</div>
-							</div>
-						</div>
-							
+				<div class="home-banner overflow">
+					<div class="home-banner-img" style="background-image: url(./imgs/test_img/14.jpg);"></div>
+				</div>
+
+				<!-- <ul>
+					<li>할것</li>
+					<li>react</li>
+					<li>제대로된 이미지 교체</li>
+					<li>구상한 모바일로 적용</li>
+					<li>css 좀더 간결하게</li>
+					<li>글씨 간격 line height조정</li>
+					<li>너무 쌈마이 함 배색, 등등 아아아아아 화나는 디자인이네</li>
+					<li>footer만들기</li>
+				</ul> -->
+				<div id="todo">
+					<div id="past-position">
+						<ul>
+							<li>영화 5년</li>
+							<li>영화 CG / StereoConvert</li>
+							<li>Titanic 3d</li>
+							<li>StarTrek in to the darkness</li>
+							<li>Percific Rim</li>
+						</ul>
+					</div>
+
+					<div id="current-position">
+						<ul>
+							<li>개발 1년</li>
+							<li>front-end</li>
+							<li>javascript</li>
+							<li>jquery</li>
+							<li>meteor</li>
+							<li>react</li>
+							<li>mongodb</li>
+						</ul>
+					</div>
+
+					<div id="will-position">
+						<ul>
+							<li>개발 1년</li>
+							<li>front-end</li>
+							<li>javascript</li>
+							<li>jquery</li>
+							<li>meteor</li>
+							<li>react</li>
+							<li>mongodb</li>
+						</ul>
 					</div>
 				</div>
-				<div class="home-banner overflow">
-					<div class="home-banner-img" style="background-image: url(./imgs/1.jpg);"></div>
-				</div>
 			</section>
-			<div id="contents">
-				<section id="dev-profile">
-					<div class="row text-center">
-						<div id="dev-profile-col">
-							<div class="col-xs-5 col-md-3">
-								face1
+				<section id="timeline-profile">
+					<div class="time-basic">
+						1987 - 2007
+						<div class="story-line">
+							<ul>
+								<li>정백경</li>
+								<li>09/19/1987</li>
+								<li>서울 출생</li>
+								<li>대진 디자인 고등학교</li>
+								<li>컴퓨터그래픽스 자격증</li>
+								<li>남서울 대학교 학사</li>
+							</ul>
+							<hr>
+							<div class="comments">
+								디자인과 그림을 좋아했지만 컴퓨터 하느라 형편 없었던 실력<br>
+								매일 게임과 컴퓨터 조립으로 하루하루를 살다<br>
+								<div class="joinArmy">입대</div>
 							</div>
-							<div class="col-xs-5 col-md-3">
-								face2
+							<br>
+						</div>
+						
+					</div>
+					<div class="time-2010">
+						2010 - 2015
+						<div class="title">행복</div>
+						<div class="story-line">
+							<ul>
+								<li>2010/01 (주)리얼이미지 스타트업 입사</li>
+								<li>2011/03 우수사원 선정</li>
+								<li>2011/12 사내 최고 생산률 선정</li>
+								<li>2014/06 (주)매크로그래프 입사</li>
+							</ul>
+
+							<div class="comments">
+								제대하고 디자인은 자연스레 포기하게 되고 영상, 사진, c언어와 마크업 언어 배웠지만,<br>
+								서둘러 취직하여 실전경험을 쌓고 싶은 마음에 영화cg회사의 신입으로 입사<br>
+								돈에 연연하지 않고 좋아하는 일을 하며 경험을 쌓던 그 때는 세상 어떤 것 보다도 행복했던 시절
 							</div>
-							<div class="col-xs-5 col-md-3">
-								face3
+						</div>
+					</div>
+
+					<div class="time-2015">
+						2015 - 2016
+						<div class="title">방황</div>
+						<div class="story-line">
+							<ul>
+								<li>2015/01 실직</li>
+								<li>2015/02 정보시스템 개발자양성 교육기관 수료</li>
+								<li>2015/07 정보처리기사 자격증</li>
+								<li>2015/08 (주)투블루 스타트업 입사 - front-end 개발자</li>
+							</ul>
+							<div class="comments">
+								회사 사정으로인해 5년 가까이 일했던 회사를 그만 두고 새로운 도전으로 발길을 돌렸고,
+								근본없는 자신감으로 개발자의 시작함.
+								생각해보면 평소에도 IT DNA라는 말을 믿기 때문에 개발자라는 직종을 조금은 쉽게 봤던 것 같기도 함.
+								또, 왠지 쉬울 것 같다는 이유로 front-end에 대해 부정적인 시선을 갖고 있었지만 까더라도 알고 까자는 마음으로
+								투블루의 front-end개발자로 입사.
+								매일 매일 최고의 사수 밑에서 1:1 과외 받듯이, 사수의 모든 것을 따라 하고 싶었고 
+								개발, 기획, 디자인, UI, UX 내 뇌에 담을 수 있을 만큼 담아보고 조금이라도 "내 것 으로 만들자!" 라는 마음으로
+								정말 바쁘게 살았고, 덕분에 살면서 한번도 나지 않던 흰머리를 월에 50가닥을 아직 까지 뽑고 있는 실정.
 							</div>
-							<div class="col-xs-5 col-md-3">
-								face4
+						</div>
+					</div>
+
+					<div class="time-2016">
+						2016 -
+						<div class="story-line">
+							<ul>
+								<li>정백경</li>
+								<li><b>서른</b></li>
+								<li><b>5</b>개월</li>
+							</ul>
+							<br>
+							
+							<div class="comments">
+								"난 아직 멀었어, 배울 것이 산더미라 기쁘다" 친구에게 이런 얘길 하면 
+								누구는 욕심이라고, 사수가 몇 년 동안 쌓아 온 것을 무슨 하루아침에 따라하려하냐 
+								재수 없다곤 하지만, 등 뒤엔 결혼, 금전적 여유, 가족 등 지켜야 할 것들을 생각하면
+								결코 현재에 안주 하면 안된다고 생각한다. 이미 어린 친구들은 한참전에 앞서 갔다.
+								만약 내가 어느정도 경력이 된 개발자라고 칭할 수준의 시기가 오더라도, 그 때는 누군가가 아닌
+								시대의 흐름을 따라 가야 할 것이다. 웹은 지금 이 순간에도 눈 부시게 발전 하고 있다.
 							</div>
 						</div>
 					</div>
 				</section>
 				<section id="dev-area">
-					<div id="dev-skills">
-						<div class="row text-center">
-							<div id="dev-skills-col">
-								<div class="col-xs-4">
-									skills1
-								</div>
-								<div class="col-xs-4">
-									skills2
-								</div>
-								<div class="col-xs-4 hidden-xs">
-									skills3
-								</div>
-							</div>
-						</div>
-					</div>
-					<div id="dev-think">
-						<div class="row text-center">
-							<div id="dev-think-col">
-								<div class="col-sm-1 col-xs-2">
-									think1
-								</div>
-								<div class="col-sm-1 col-xs-2">
-									think2
-								</div>
-								<div class="col-sm-1 col-xs-2">
-									think3
-								</div>
-								<div class="col-sm-1 col-xs-2">
-									think4
-								</div>
-								<div class="col-sm-1 col-xs-2">
-									think5
-								</div>
-								<div class="col-sm-1 col-xs-2">
-									think6
-								</div>
-								<div class="col-sm-1 col-xs-2 hidden-xs">
-									think7
-								</div>
-								<div class="col-sm-1 col-xs-2 hidden-xs">
-									think8
-								</div>
-								<div class="col-sm-1 col-xs-2 hidden-xs">
-									think9
-								</div>
-								<div class="col-sm-1 col-xs-2 hidden-xs">
-									think10
-								</div>
-								<div class="col-sm-1 col-xs-2 hidden-xs">
-									think11
-								</div>
-								<div class="col-sm-1 col-xs-2 hidden-xs">
-									think12
-								</div>
-							</div>
-						</div>
-					</div>
 				</section>
-				<section id="cg-area">
-					<div id="cg-profile">
-						<div class="row text-center">
-							<div id="cg-profile-col">
-								<div class="col-xs-5 col-md-3">
-									face1
-								</div>
-								<div class="col-xs-5 col-md-3">
-									face2
-								</div>
-								<div class="col-xs-5 col-md-3">
-									face3
-								</div>
-								<div class="col-xs-5 col-md-3">
-									face4
-								</div>
-							</div>
-						</div>
-					</div>
-				</section>
-			</div>
 
 		</div>
 
+		<footer>
+
+
+			<!-- <div class="panel panel-default"> -->
+			<div class="footer">
+				<div class="linkSocial text-center">
+					<i class="fa fa-facebook-square fa-2x"></i>
+				</div>			
+	
+				2016
+			</div>
+			<!-- </div> -->
+
+
+		</footer>
+
+		
+		<script>
+
+
+		</script>
 
 
 

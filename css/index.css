@@ -1,0 +1,242 @@
+	ul {
+		list-style:none;
+		padding-left:0px;
+	}
+
+	hr {
+		border-color: #aaa;
+	}
+	a:link, a:visited {
+		text-decoration: none;
+	}
+	header {
+		font-family: "maaxbold";
+		z-index: 999;
+		display: block;
+		background: #fff;
+		padding-top: 30px;
+		width: 100%;
+		top: 0;
+		bottom: auto;
+		position: fixed;
+	}
+	header .bars-icon {
+		font-size: 21px;
+		padding-right: 40px;
+	}
+
+	header #navbar a {
+		font-size: 28px;
+		letter-spacing: 5px;
+		color: black;
+	}
+	header #navbar li a {
+		font-family: "maaxbold";
+		font-weight: bold;
+		font-size: 15px;
+		letter-spacing: 2px;
+	}
+
+	header #navbar .navbar-brand:hover {
+		color : #c1830b;
+	}
+
+	#header {
+		height: 100vh;
+		background-color: #fff;
+		z-index: -1;
+		position: relative;
+		padding-top: 80px;
+	}
+	#header #welcome {
+		z-index: 1;
+		position: fixed;
+		top: 110px;
+		left: 0px;
+		bottom: 0;
+		right: 0;
+		width: 250px;
+		height: 150px;
+		margin: auto;
+		padding: 15px;
+		padding-top: 10px;
+		background-color: #fff;
+	}
+	#header #welcome::before {
+		content: "";
+		position: absolute;
+	    top: -75px;
+	    left: 90px;
+		/*margin-top: 30%;*/
+		background-image: url(../imgs/test_img/bk1.png);
+		border-radius: 50%;
+		width: 70px;
+		height: 70px;
+		background-size: cover;
+		background-repeat:no-repeat;
+		background-position: center center !important;
+
+	}
+
+	#header .linkSocial{
+		margin-top: 10px;
+		/*background-color: #fff;*/
+	}
+	
+	#header .welcome-msg {
+		text-align: center;
+		font-size: 50px;
+		font-weight: bold;
+		/*color: #fff;*/
+	}
+	#header .welcome-msg:nth-child(2) {
+		padding-top: 10px;
+		font-size: 15px;
+		font-weight: normal;
+	}
+
+
+	#header #welcome:hover {
+		/*transition: all 0.5s ease;
+		background-color: #000;*/
+	}
+
+	#header #welcome:hover > * {
+		/*transition: all 0.5s ease;
+		color: white;*/
+	}
+
+
+
+	#header .overflow {
+		width: 80%;
+		height: 640px;
+		position: fixed;
+		overflow: hidden;
+		margin: 10%;
+		margin-top: 30px;
+	}
+	#header .home-banner-img {
+		opacity: 0.7;
+		top: 0px;
+		height: 350px;
+		background-size: cover;
+		background-repeat:no-repeat;
+		/*position: fixed;*/
+		width: 100%;
+		background-position: center center;
+
+	}
+
+
+/*-------------------------done---------------------*/
+#todo {
+	
+	
+}
+#todo #past-position, #todo #will-position,
+#todo #current-position {
+	position: fixed;
+	top: 70vh;
+	width: 300px;
+}
+
+#todo #past-position {
+	text-align: left;
+	left: 0;
+	margin-left: 60px;
+}
+
+#todo #current-position {
+	text-align: center;
+	left: 50%;
+	margin: 0 0 0 -150px;
+
+}
+
+#todo #will-position {
+	text-align: right;
+	right: 0;
+	margin-right: 60px;
+}
+
+
+
+/*----------------------------------dev profile-------------------------------*/
+
+	#timeline-profile {
+		padding-left: 100px;
+		padding-right: 100px;
+		z-index: 10;
+		background-color: #eee;
+	}
+
+	#timeline-profile .time-2010 {
+		/*color: rgb(42, 87, 59);*/
+	}
+
+	#timeline-profile > div{
+		color: #000	;
+		padding-top: 100px;
+		text-align: right;
+		font-size: 100px;
+		font-weight: bold;
+		height: 100vh;
+	}
+	
+	#timeline-profile .title { 
+		font-weight: bold;
+		font-size: 70px;
+	}
+
+	#timeline-profile .time-basic{
+		text-align: left;
+	}
+
+	#timeline-profile .time-2016 {
+		text-align: left;
+	}
+
+	#timeline-profile .story-line {
+		padding-left: 180px;
+		padding-right: 180px;
+		font-size: 20px;
+		font-weight: normal;
+		text-align: center;
+	}
+
+	#timeline-profile .story-line .comments {
+		word-break: keep-all;
+	}
+
+	#timeline-profile .story-line .comments .joinArmy {
+		margin-top: 50px;
+		padding-top: 30px;
+		padding-bottom: 30px;
+		font-weight: bold;
+	    font-size: 30px;
+	    width: 100%;
+	    position: absolute;
+	    left: 0;
+	    color : #fff;
+	    background-image: url(../imgs/test_img/snow.jpg);
+	    background-position: center center;
+	}
+	
+	.dev-skills {
+		/*min-width: 150px!important;*/
+	}
+
+	.dev-skills-text {
+		font-size: 20px;
+		position: absolute;
+	}
+
+	/*-------------------footer -------------------*/
+
+	footer .footer {
+		font-size: 12px;
+		font-weight: bold;
+		padding : 10px;
+		text-align: center;
+	}
