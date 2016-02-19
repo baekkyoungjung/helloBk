@@ -41,14 +41,14 @@
 		color : #c1830b;
 	}
 
-	#header {
+	section#basic {
 		height: 100vh;
 		background-color: #fff;
 		z-index: -1;
 		position: relative;
 		padding-top: 80px;
 	}
-	#header #welcome {
+	section #welcome {
 		z-index: 1;
 		position: fixed;
 		top: 110px;
@@ -62,7 +62,7 @@
 		padding-top: 10px;
 		background-color: #fff;
 	}
-	#header #welcome::before {
+	section #welcome::before {
 		content: "";
 		position: absolute;
 	    top: -75px;
@@ -78,45 +78,44 @@
 
 	}
 
-	#header .linkSocial{
+	section .linkSocial{
 		margin-top: 10px;
 		/*background-color: #fff;*/
 	}
 	
-	#header .welcome-msg {
+	section .welcome-msg {
 		text-align: center;
 		font-size: 50px;
 		font-weight: bold;
 		/*color: #fff;*/
 	}
-	#header .welcome-msg:nth-child(2) {
+	section .welcome-msg:nth-child(2) {
 		padding-top: 10px;
 		font-size: 15px;
 		font-weight: normal;
 	}
 
 
-	#header #welcome:hover {
+	section #welcome:hover {
 		/*transition: all 0.5s ease;
 		background-color: #000;*/
 	}
 
-	#header #welcome:hover > * {
+	section #welcome:hover > * {
 		/*transition: all 0.5s ease;
 		color: white;*/
 	}
 
 
 
-	#header .overflow {
+	section .overflow {
 		width: 80%;
 		height: 640px;
 		position: fixed;
 		overflow: hidden;
-		margin: 10%;
-		margin-top: 30px;
+		margin-top: 50px;
 	}
-	#header .home-banner-img {
+	section .home-banner-img {
 		opacity: 0.7;
 		top: 0px;
 		height: 350px;
@@ -164,39 +163,37 @@
 
 /*----------------------------------dev profile-------------------------------*/
 
-	#timeline-profile {
+	section.timeline {
 		padding: 0 10vw 0 10vw;
 		z-index: 10;
 		background-color: #eee;
 	}
 
-	#timeline-profile .time-2010 {
-		/*color: rgb(42, 87, 59);*/
-	}
-
-	#timeline-profile > div{
+	section.timeline {
 		color: #000	;
 		padding-top: 100px;
 		text-align: right;
-		font-size: 10vw;
+		font-size: 60px;
 		font-weight: bold;
 		height: 100vh;
 	}
 	
-	#timeline-profile .title { 
+	section.timeline .title { 
 		font-weight: bold;
-		font-size: 55px;
+		font-size: 45px;
 	}
 
-	#timeline-profile .time-basic{
+	section.timeline .time-basic {
 		text-align: left;
 	}
 
-	#timeline-profile .time-2016 {
-		text-align: left;
+	section.timeline .years {
+		position: relative;
+		text-align: center;
+		top: 30%;
 	}
 
-	#timeline-profile .story-line {
+	section.timeline .story-line {
 		/*padding-left: 15vw;*/
 		/*padding-right: 15vw;*/
 		font-size: 20px;
@@ -205,11 +202,11 @@
 		margin-top: 20px;
 	}
 
-	#timeline-profile .story-line .comments {
+	section.timeline .story-line .comments {
 		word-break: keep-all;
 	}
 
-	#timeline-profile .story-line .comments .joinArmy {
+	section.timeline .story-line .comments .joinArmy {
 		margin-top: 50px;
 		padding: 30px 0 30px 0;
 		font-weight: bold;
